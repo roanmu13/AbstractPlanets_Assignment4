@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 /*Rosa Munguia
  Date: July 20 2017
  Description:  GiantPlanet class
- Version: 0.1- added giantPlanet class
+ Version: 0.2- updated public methods
  */
 namespace AbstractPlanetAssignment
 {
@@ -32,13 +32,20 @@ namespace AbstractPlanetAssignment
         //public Methods
         public bool HasMoons()
         {
-            return (MoonCount > 0);
-
+           if (MoonCount > 0)
+            {
+                return true;
+            }
+            return false;
         }
 
         public bool HasRings()
         {
-            return (RingCount > 0);
+           if (RingCount > 0)
+            {
+               return true;
+            }
+             return false;
         }
 
     }
