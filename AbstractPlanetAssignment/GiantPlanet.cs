@@ -32,20 +32,20 @@ namespace AbstractPlanetAssignment
         //public Methods
         public bool HasMoons()
         {
-           if (MoonCount > 0)
+            if (MoonCount > 0)
             {
                 return true;
             }
-            return false;
+            else { return false; }
         }
 
         public bool HasRings()
         {
-           if (RingCount > 0)
+            if (RingCount > 0)
             {
-               return true;
+                return true;
             }
-             return false;
+            else { return false; }
         }
 
     }

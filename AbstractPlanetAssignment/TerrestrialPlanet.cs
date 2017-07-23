@@ -5,7 +5,7 @@ using System.Text;
 /*Rosa Munguia
  Date: July 20 2017
  Description:  TerrestrialPlanet class
- Version: 0.1- created TerrestrialPlanet class
+ Version: 0.2- update public methods
  */
 namespace AbstractPlanetAssignment
 {
@@ -23,16 +23,20 @@ namespace AbstractPlanetAssignment
 
         public bool HasMoons()
         {
-            return (MoonCount > 0);
+            if (MoonCount > 0)
+            {
+                return true;
+            }
+            else { return false; }
         }
 
         public bool Habitable()
         {
             if(this._oxygen == true)
             {
-                
+                return true;
             }
-            return _oxygen;
+            else { return false; }
         }
     }
 }
