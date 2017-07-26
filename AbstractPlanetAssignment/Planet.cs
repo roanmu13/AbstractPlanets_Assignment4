@@ -116,7 +116,7 @@ namespace AbstractPlanetAssignment
             return displayString;
         }
 
-        public abstract void HasMoons();
+        //public abstract void HasMoons();
         //Private Methods
     }
 }

@@ -5,11 +5,11 @@ using System.Text;
 /*Rosa Munguia
  Date: July 20 2017
  Description:  TerrestrialPlanet class
- Version: 0.2- update public methods
+ Version: 0.3- implemented ihabitable and ihasmoons interfce
  */
 namespace AbstractPlanetAssignment
 {
-    public class TerrestrialPlanet : Planet
+    public class TerrestrialPlanet : Planet, IHabitable, IHasMoons
     {
         //Private Instance Variables
         private bool _oxygen;
@@ -21,7 +21,7 @@ namespace AbstractPlanetAssignment
         }
         //public Methods
 
-        public override bool HasMoons()
+        public bool HasMoons()
         {
             if (MoonCount > 0)
             {

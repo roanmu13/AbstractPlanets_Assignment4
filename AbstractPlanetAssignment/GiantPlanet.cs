@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 /*Rosa Munguia
- Date: July 20 2017
+ Date: July 26 2017
  Description:  GiantPlanet class
- Version: 0.2- updated public methods
+ Version: 0.3- implement ihasmoons and ihasrings interface
  */
 namespace AbstractPlanetAssignment
 {
-    class GiantPlanet : Planet
+    class GiantPlanet : Planet, IHasMoons, IHasRings
     {
         //Private Instance Variables
         private string _type;
@@ -30,7 +30,7 @@ namespace AbstractPlanetAssignment
 
         }
         //public Methods
-        public  bool HasMoons()
+        public bool HasMoons()
         {
             return MoonCount > 0;
            
@@ -44,7 +44,7 @@ namespace AbstractPlanetAssignment
         public override string ToString()
         {
             string displayString = "";
-            displayString+= ""
+            displayString += "";
             return base.ToString();
         }
     }
