@@ -21,7 +21,7 @@ namespace AbstractPlanetAssignment
         }
         //public Methods
 
-        public bool HasMoons()
+        public override bool HasMoons()
         {
             if (MoonCount > 0)
             {

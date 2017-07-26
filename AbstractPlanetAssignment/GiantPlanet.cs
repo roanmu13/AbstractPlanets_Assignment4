@@ -30,23 +30,22 @@ namespace AbstractPlanetAssignment
 
         }
         //public Methods
-        public bool HasMoons()
+        public  bool HasMoons()
         {
-            if (MoonCount > 0)
-            {
-                return true;
-            }
-            else { return false; }
+            return MoonCount > 0;
+           
         }
 
         public bool HasRings()
         {
-            if (RingCount > 0)
-            {
-                return true;
-            }
-            else { return false; }
+            return RingCount > 0;
         }
 
+        public override string ToString()
+        {
+            string displayString = "";
+            displayString+= ""
+            return base.ToString();
+        }
     }
 }
