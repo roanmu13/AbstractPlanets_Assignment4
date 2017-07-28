@@ -6,12 +6,18 @@ using System.Threading.Tasks;
 /*Rosa Munguia
  Date: July 28 2017
  Description:  Driver
- Version: 0.3- implemented waitForAnyKey method
+ Version: 0.4- properly implemented waitForAnyKey method in program class
  */
 namespace AbstractPlanetAssignment
 {
     class Program
     {
+        //method to wait for user keypress in order to exit
+        static void WaitForAnyKey()
+        {
+            Console.ReadKey();
+        }
+
         static void Main(string[] args)
         {
             Console.WriteLine("List of Giant Planets: ");
@@ -27,11 +33,9 @@ namespace AbstractPlanetAssignment
             TerrestrialPlanet hugePlanet = new TerrestrialPlanet("Dolerth", 320000, 250, true);
             Console.WriteLine(hugePlanet.ToString());
             //  Console.WriteLine();
+            Program.WaitForAnyKey();  
         }
-        public void WaitForAnyKey()
-        {
-            Console.ReadKey();
-        }
+       
 
     }
 }

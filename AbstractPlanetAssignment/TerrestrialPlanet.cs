@@ -13,7 +13,14 @@ namespace AbstractPlanetAssignment
     {
         //Private Instance Variables
         private bool _oxygen;
-        //Constructor
+        //Constructors
+        /// <summary>
+        /// this is the main constructor for the terrestrial planet class
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="diameter"></param>
+        /// <param name="mass"></param>
+        /// <param name="oxygen"></param>
         public TerrestrialPlanet(string name, double diameter, double mass, bool oxygen)
             : base(name, diameter, mass)
         {
@@ -23,6 +30,7 @@ namespace AbstractPlanetAssignment
         }
         //public Methods
 
+            //this method checks if mooncount is greater than 0 and returns true if so
         public bool HasMoons()
         {
             if (MoonCount > 0)
@@ -32,6 +40,7 @@ namespace AbstractPlanetAssignment
             else { return false; }
         }
 
+        //this method checks if the planet is habitable and return true if so
         public bool Habitable()
         {
             if(this._oxygen == true)

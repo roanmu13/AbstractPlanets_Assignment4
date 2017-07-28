@@ -32,12 +32,15 @@ namespace AbstractPlanetAssignment
 
         }
         //public Methods
+
+            //this method returns true if mooncount is greater than 0
         public bool HasMoons()
         {
             return MoonCount > 0;
            
         }
 
+        //this method returns true if ringcount is greater than 0
         public bool HasRings()
         {
             return RingCount > 0;
