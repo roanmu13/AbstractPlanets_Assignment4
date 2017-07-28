@@ -5,7 +5,7 @@ using System.Text;
 /*Rosa Munguia
  Date: July 20 2017
  Description:  TerrestrialPlanet class
- Version: 0.3- implemented ihabitable and ihasmoons interfce
+ Version: 0.4- refactoring to try and include oxygen
  */
 namespace AbstractPlanetAssignment
 {
@@ -18,6 +18,7 @@ namespace AbstractPlanetAssignment
             : base(name, diameter, mass)
         {
             this._oxygen = oxygen;
+            Console.WriteLine("Oxygen: " + oxygen);
           
         }
         //public Methods

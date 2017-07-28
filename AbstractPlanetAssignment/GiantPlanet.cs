@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 /*Rosa Munguia
  Date: July 26 2017
  Description:  GiantPlanet class
- Version: 0.3- implement ihasmoons and ihasrings interface
+ Version: 0.4- refactoring to try and include type
  */
 namespace AbstractPlanetAssignment
 {
@@ -26,6 +26,7 @@ namespace AbstractPlanetAssignment
             : base(name, diameter, mass)
         {
             this._type = type;
+            Console.WriteLine("Type: " + type);
           
 
 
