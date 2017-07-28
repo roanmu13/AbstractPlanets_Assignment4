@@ -26,6 +26,7 @@ namespace AbstractPlanetAssignment
             : base(name, diameter, mass)
         {
             this._type = type;
+          
 
 
         }
@@ -41,11 +42,5 @@ namespace AbstractPlanetAssignment
             return RingCount > 0;
         }
 
-        public override string ToString()
-        {
-            string displayString = "";
-            displayString += "";
-            return base.ToString();
-        }
     }
 }

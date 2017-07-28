@@ -18,6 +18,7 @@ namespace AbstractPlanetAssignment
             : base(name, diameter, mass)
         {
             this._oxygen = oxygen;
+          
         }
         //public Methods
 
@@ -38,5 +39,6 @@ namespace AbstractPlanetAssignment
             }
             else { return false; }
         }
+      
     }
 }

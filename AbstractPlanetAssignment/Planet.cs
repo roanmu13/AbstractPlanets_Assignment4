@@ -110,8 +110,8 @@ namespace AbstractPlanetAssignment
 
         {
             string displayString = "";
-            displayString += "Name: " + this.Name + "Diameter: " + this.Diameter +
-                "Mass: " + this.Mass;
+            displayString += "Name: "  + this.Name + "\n" + "Diameter: " + this.Diameter +
+              "\n" + "Mass: " + this.Mass;
 
             return displayString;
         }
