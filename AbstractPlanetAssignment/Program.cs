@@ -28,7 +28,7 @@ namespace AbstractPlanetAssignment
             GiantPlanet anotherBigPlanet = new GiantPlanet("Frelia", 350000, Math.Pow(5, 7), "Gas");
             Console.WriteLine(anotherBigPlanet.ToString());
 
-            // bigPlanet.HasMoons();
+            bigPlanet.HasMoons();
             Console.WriteLine();
 
             Console.WriteLine("List of Terrestrial Planets:");
